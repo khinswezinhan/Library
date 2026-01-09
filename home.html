@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="jj.css">
+	<title></title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style type="text/css">
+		#i1,#i2,#i3,#i4,#i5,#i6,#i7,#i8,#i9,#i10,#i11,#i12,#i13,#i14,#i15,#i16,#i17,#i18,#i19,#i20,#i21,#i22,#i23,#i24,#i25,#i26,#i27,#i28,#i29,#i30,#i31,#i32,#i33,#i34,#i35,#i36,#i37,#i38,#i39,#i40,#i41,#i42,#i43,#i44,#i45,#i46,#i47,#i48,#i49,#i50,#borrow1,#borrow2,#borrow3,#borrow4,#borrow5,#borrow6,#borrow7,#borrow8,#borrow9,#borrow10,#borrow11,#borrow12,#borrow13{font-size: 20px;color:grey;}
+
+		#borrow1{display: none;}
+
+		#borrow1:hover{
+						transition: 0.2s all linear;}
+
+		#borrow2{display: none;}
+
+		#borrow2:hover{
+						transition: 0.2s all linear;}
+
+		#borrow3{display: none;}
+
+		#borrow3:hover{
+						transition: 0.2s all linear;}
+
+		#borrow4{display: none;}
+
+		#borrow4:hover{
+						transition: 0.2s all linear;}		
+		#borrow5{display: none;}
+
+		#borrow5:hover{
+						transition: 0.2s all linear;}
+
+		#borrow6{display: none;}
+
+		#borrow6:hover{
+						transition: 0.2s all linear;}
+		#borrow7{display: none;}
+
+		#borrow7:hover{
+						transition: 0.2s all linear;}
+
+		#borrow8{display: none;}
+
+		#borrow8:hover{
+						transition: 0.2s all linear;}
+		#borrow9{display: none;}
+
+		#borrow9:hover{
+						transition: 0.2s all linear;}
+
+		#borrow10{display: none;}
+
+		#borrow10:hover{
+						transition: 0.2s all linear;}
+
+		#borrow11{display: none;}
+
+		#borrow11:hover{
+						transition: 0.2s all linear;}
+						#changeColor1{
+							box-shadow: -10px 10px 30px grey;
+						}
+						#changeColor2{
+							box-shadow: -10px 10px 30px grey;
+						}
+						#changeColor3{
+							box-shadow: -10px 10px 30px grey;
+						}
+						#changeColor4{
+							box-shadow:-10px 10px 30px grey;
+						}
+						#changeColor5{
+							box-shadow: 3px 3px 0px grey;
+						}
+						#changeColor6{
+							box-shadow: -10px 10px 30px grey;
+						}
+						#changeColor7{
+							box-shadow: -10px 10px 30px grey;
+						}
+						#changeColor8{
+							box-shadow: -10px 10px 30px grey;
+						}
+						#changeColor9{
+							box-shadow: -10px 10px 30px grey;
+						}
+						
+														
+		#changeColor1:hover #borrow1{
+			display: block;
+			transition: 0.2s all linear;
+			color: orange;
+
+		}
+		#changeColor2:hover #borrow2{
+			display: block;
+			transition: 0.2s all linear;
+			color: orange;
+		}
+		#changeColor3:hover #borrow3{
+			display: block;
+			transition: 0.2s all linear;
+			color: orange;
+		}
+		#changeColor4:hover #borrow4{
+			display: block;
+			transition: 0.2s all linear;
+			color: orange;
+		}
+		#changeColor5:hover #borrow5{
+			display: block;
+			transition: 0.2s all linear;
+			color: orange;
+		}
+		#changeColor6:hover #borrow6{
+			display: block;
+			transition: 0.2s all linear;
+			color: orange;
+		}
+		#changeColor7:hover #borrow7{
+			display: block;
+			transition: 0.2s all linear;
+			color: orange;
+		}
+		#changeColor8:hover #borrow8{
+			display: block;
+			transition: 0.2s all linear;
+			color: orange;
+		}
+		#changeColor9:hover #borrow9{
+			display: block;
+			transition: 0.2s all linear;
+			color: orange;
+		}
+		#row4:hover #borrow10{
+			display: block;
+			transition: 0.2s all linear;
+			color: orange;
+		}
+
+		#row5:hover #borrow11{
+			display: block;
+			transition: 0.2s all linear;
+			color: orange;
+		}
+
+		#row6:hover #borrow12{
+			display: block;
+			transition: 0.2s all linear;
+			color: orange;
+		}
+
+		#row7:hover #borrow13{
+			display: block;
+			transition: 0.2s all linear;
+			color: orange;
+		}
+
+		#h1{width: 80px;height: 80px;margin-left: 5px;}
+		#h1{margin-top: 5px;border-radius: 80px;}
+		ul{list-style: none;text-align: center;}
+		ul li{display: inline-block;position: relative;}
+		ul li a{display: block;padding: 10px 15px;text-decoration: none;}
+
+		ul li ul.dropdown li{display: block;}
+		ul li ul.dropdown{width: auto;position: absolute;display: none;}
+		
+		ul li:hover ul.dropdown{display: block;width: auto;}
+		#list2,#list3,#list4,#list5{margin-left: 50px;font-family: Cursive;font-size: 20px;}
+		#list1{font-family: Cursive;font-size: 20px;}
+		#b{border-radius: 20px;background-color: skyblue;}
+		
+		#text1{margin-top: 200px;}
+		#text3{color: green;}
+		#text2{color: #2196f3;overflow: hidden;transition: 0.2s;}
+		#text2:hover{color: #255784;background: #2196f3;box-shadow: 0 0 10px #2196f3,0 0 40px #2196f3,0 0 80px #2196f3,}
+		#text11{margin-top: 200px;color: white;}
+		#text33{color: yellow;}
+
+		#text111{margin-top: 200px;color: white;}
+		#text333{color: yellow;}
+
+		#slideBook{float: right;margin-right: 350px;font-family: Cursive;font-size: 20px;}
+
+		#slideBook1{float: right;margin-right: 350px;font-family: Cursive;font-size: 20px;}
+
+		.dark-mode{background-color: skyblue;}
+		button{cursor: pointer;}
+		#changeBodyBackgroundColor{border: none;background-color: orange;}
+
+		#b1{background-color: orange;border: none;}
+
+		#searchbox{border-radius: 10px;}
+
+		#icons1:hover input{width: 200px;background-color: skyblue;}
+
+		#icons1 input{width: 0;outline: none;border: none;font-weight: 500px;transition: 0.8s;background: transparent;}
+		.heading span{margin-left: 20px;width: 250px;text-align: center;
+			background: orange;
+			color: white;
+			display: inline-block;
+			clip-path: polygon(100% 0,93% 50%,100% 99%,0% 100%,7% 50%,0% 0%);
+			cursor: pointer;
+		}
+		.rightside span{margin-left: 20px;width: 200px;text-align: center;
+			background: orange;
+			color: white;
+			display: inline-block;
+			clip-path: polygon(100% 0,93% 50%,100% 99%,0% 100%,7% 50%,0% 0%);
+		}
+		a{text-decoration: none;}
+		#more{ font-size: 20px;display: flex;justify-content: space-between;}
+		#mo{margin-top: 60px;color: white;}
+		#mo:hover{text-decoration: none;}
+		#show{color: orange;margin-top: 20px;font-size: 20px;font-family: cursive;}
+	</style>
+	</head>
+	<body>
+		<div id="google">
+		<div id="top">
+			<div><img src="project5.jpg" width="90px" height="90px" id="h1"></div>
+			<ul>
+				<li id="list1"><a href="home.html">Home</a></li>
+				<li id="list2"><a href="Login.html">Logout</a></li>
+				<li id="list3"><a href="">Author</a>
+					<ul class="dropdown">
+						<div id="b">
+						<li><a href="AKyiTaw.html">AKyiTaw</a></li>
+						<li><a href="LoonHtarHtar.html">LoonHtarHtar</a></li>
+						<li><a href="MoeMoe.html">MoeMoe(Inya)</a></li>
+						<li><a href="ThoeSaung.html">ThoeSaung</a></li>
+						<li><a href="MonHalsey.html">MonHalsey</a></li>
+					</div>
+					</ul>
+				</li>
+				<li id="list4"><a href="review.html">Review</a></li>
+				<li id="list5"><a href="contact.html">About us</a></li>
+			</ul>
+		<div id="icons">
+		<div id="icons1">
+			<input type="search" name="s1" placeholder="search" id="searchbox">
+		<button id="b1" onclick="search()"><a href="#"><i class="glyphicon glyphicon-search"></i></a></button>
+		</div>
+
+		
+		<div id="icons3">
+		<button onclick="dell()" id="changeBodyBackgroundColor"><i class="glyphicon glyphicon-adjust"></i></button>
+		</div>
+	</div>
+
+</div>
+	
+
+	<section class="home swiper" id="home">
+		<div class="swiper-wrapper">
+      <div class="swiper-slide conatiner1">
+
+      <div id="slideBook">
+      	<p id="text1">Healthy Divorce</p>
+      	<p id="text3">Mon Halsey</p>
+      	<a href="Fiction3.html"><button id="text2">Borrow</button></a>
+      </div>
+      	
+      
+      	<img src="BeautyBook1forHealthyDivorce.jpg" alt="" class="slide1-of-1" width="200px" height="200px">
+      	<img src="BeautyBook3forHealthyDivorce.jpg" alt=""  class="slide1-of-2" width="250px" height="250px">
+
+      </div>
+      
+
+      <div class="swiper-slide conatiner2">
+      	<div id="slideBook1">
+      	<p id="text11">Widow Village</p>
+      	<p id="text33">Thoe Saung</p>
+      	<a href="Fiction5.html"><button id="text2">Borrow</button></a>
+      </div>
+      	
+      
+      	<img src="BeautyBook1forWidowVillage.png" alt="" class="slide1-of-2-1" width="200px" height="200px">
+      	<img src="BeautyBook2forWidowVillage.png" alt=""  class="slide1-of-2-2" width="250px" height="250px">
+      	
+      </div>
+
+      
+      <div class="swiper-slide conatiner3">
+      	<div id="slideBook">
+      	<p id="text111">PAPILLON AND BANCO</p>
+      	<p id="text333">U Hla Win</p>
+      	<a href="Translate3.html"><button id="text2">Borrow</button></a>
+      </div>
+      	
+      
+      	<img src="BeautyBook2forParpillon.jpg" alt="" class="slide1-of-3-1" width="200px" height="200px">
+      	<img src="BeautyBook1forParpillon.png" alt=""  class="slide1-of-3-2" width="250px" height="250px">
+      	
+      </div>
+
+    </div>
+    
+    <div class="swiper-pagination"></div>
+	</section>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="main.js"></script>
+		<marquee id="show"></marquee>
+<div id="more">
+
+<section class="features" id="features">
+			
+			<h1 class="heading"><span>General book</span></h1>
+			</section>
+			
+				<h1 class="rightside"><span><a href="Computer.html" id="mo">More>></a></span>
+
+			</div>
+	
+	<div id="general1">
+		<div id="row1">
+			<a href="Translate.html">
+				<button id="changeColor1">
+					<img src="Translate1.1.jpg" width="150px" height="200px" title="translate">
+						<br><br>
+							<label for="hello">LANZORATE</label><br>
+				<i class="glyphicon glyphicon-star" id="i1"></i>
+				<i class="glyphicon glyphicon-star" id="i2"></i>
+				<i class="glyphicon glyphicon-star" id="i3"></i>
+				<i class="glyphicon glyphicon-star" id="i4"></i>
+				<i class="glyphicon glyphicon-star" id="i5"></i>
+				<a href="Translate1.html"><i class="glyphicon glyphicon-shopping-cart" id="borrow1">borrow..</i></a>
+
+				</button>
+			</a>
+		</div>
+
+		<div id="row2">
+			<a href="Translate.html">
+				<button id="changeColor2">
+					<img src="Translate3.1.jpg" width="150px" height="200px" title="translate">
+						<br><br>
+							<label for="hello">PAPILLON AND BANCO</label><br>
+				<i class="glyphicon glyphicon-star" id="i6"></i>
+				<i class="glyphicon glyphicon-star" id="i7"></i>
+				<i class="glyphicon glyphicon-star" id="i8"></i>
+				<i class="glyphicon glyphicon-star" id="i9"></i>
+				<i class="glyphicon glyphicon-star" id="i10"></i>
+				<a href="Translate3.html"><i class="glyphicon glyphicon-shopping-cart" id="borrow2">borrow..</i></a>
+							
+				</button>
+			</a>
+		</div>
+
+		<div id="row3">
+			<a href="Magazine.html">
+				<button id="changeColor3">
+					<img src="Magazine3.1.jpg" width="150px" height="200px" title="magazine">
+						<br><br>
+							<label for="hello">Lady's Home</label><br>
+				<i class="glyphicon glyphicon-star" id="i11"></i>
+				<i class="glyphicon glyphicon-star" id="i12"></i>
+				<i class="glyphicon glyphicon-star" id="i13"></i>
+				<i class="glyphicon glyphicon-star" id="i14"></i>
+				<i class="glyphicon glyphicon-star" id="i15"></i>
+				<a href="Magazine3.html"><i class="glyphicon glyphicon-shopping-cart" id="borrow3">borrow..</i></a>
+								
+				</button>
+		</a>
+	</div>
+
+	</div>
+
+	<div id="general2">
+		<div id="row1">
+			<a href="Story.html">
+				<button id="changeColor4">
+					<img src="Story2.1.jpg" width="150px" height="200px" title="story">
+						<br><br>
+							<label for="hello">STUPID RABBID</label><br>
+				<i class="glyphicon glyphicon-star" id="i16"></i>
+				<i class="glyphicon glyphicon-star" id="i17"></i>
+				<i class="glyphicon glyphicon-star" id="i18"></i>
+				<i class="glyphicon glyphicon-star" id="i19"></i>
+				<i class="glyphicon glyphicon-star" id="i20"></i>
+				<a href="Story2.html"><i class="glyphicon glyphicon-shopping-cart" id="borrow4">borrow..</i></a>
+								
+				</button>				
+			</a>
+		</div>
+
+		<div id="row2">
+			<a href="LoveStory.html">
+				<button id="changeColor5">
+					<img src="Love Story1.1.jpg" width="150px" height="200px" title="loveStory">
+						<br><br>
+							<label for="hello">MY HEART</label><br>
+				<i class="glyphicon glyphicon-star" id="i21"></i>
+				<i class="glyphicon glyphicon-star" id="i22"></i>
+				<i class="glyphicon glyphicon-star" id="i23"></i>
+				<i class="glyphicon glyphicon-star" id="i24"></i>
+				<i class="glyphicon glyphicon-star" id="i25"></i>
+				<a href="Love Story1.html"><i class="glyphicon glyphicon-shopping-cart" id="borrow5">borrow..</i></a>
+								
+				</button>				
+			</a>
+		</div>
+
+		<div id="row3">
+			<a href="History.html">
+				<button id="changeColor6">
+					<img src="History5.1.jpg" width="150px" height="200px" title="History">
+						<br><br>
+							<label for="hello">GANDHI</label><br>
+				<i class="glyphicon glyphicon-star" id="i26"></i>
+				<i class="glyphicon glyphicon-star" id="i27"></i>
+				<i class="glyphicon glyphicon-star" id="i28"></i>
+				<i class="glyphicon glyphicon-star" id="i29"></i>
+				<i class="glyphicon glyphicon-star" id="i30"></i>
+				<a href="History5.html"><i class="glyphicon glyphicon-shopping-cart" id="borrow6">borrow..</i></a>
+								
+				</button>				
+			</a>
+		</div>
+
+	</div>
+
+	<div id="general3">
+
+		<div id="row1">
+			<a href="Health.html">
+				<button id="changeColor7">
+					<img src="Health4.1.jpg" width="150px" height="200px" title="health">
+						<br><br>
+							<label for="hello">The symptoms don't equal</label><br> <label>cause of hormone</label><br>
+				<i class="glyphicon glyphicon-star" id="i31"></i>
+				<i class="glyphicon glyphicon-star" id="i32"></i>
+				<i class="glyphicon glyphicon-star" id="i33"></i>
+				<i class="glyphicon glyphicon-star" id="i34"></i>
+				<i class="glyphicon glyphicon-star" id="i35"></i>
+				<a href="Health4.html"><i class="glyphicon glyphicon-shopping-cart" id="borrow7">borrow..</i></a>
+								
+				</button>				
+			</a>
+		</div>
+
+		<div id="row2">
+			<a href="Funny.html">
+				<button id="changeColor8">
+					<img src="Funny3.1.jpg" width="150px" height="200px" title="funny">
+					<br><br>
+						<label for="hello">VILLAGE GUY</label><br>
+				<i class="glyphicon glyphicon-star" id="i36"></i>
+				<i class="glyphicon glyphicon-star" id="i37"></i>
+				<i class="glyphicon glyphicon-star" id="i38"></i>
+				<i class="glyphicon glyphicon-star" id="i39"></i>
+				<i class="glyphicon glyphicon-star" id="i40"></i>
+				<a href="Funny3.html"><i class="glyphicon glyphicon-shopping-cart" id="borrow8">borrow..</i></a>
+								
+				</button>
+			</a>
+		</div>
+
+		<div id="row3">
+			<a href="Fiction.html">
+				<button id="changeColor9">
+					<img src="Fiction1.1.jpg" width="150px" height="200px" title="fiction">
+					<br><br>
+						<label for="hello">SHORT FICTION NO.3</label><br>
+							<i class="glyphicon glyphicon-star" id="i41"></i>
+				<i class="glyphicon glyphicon-star" id="i42"></i>
+				<i class="glyphicon glyphicon-star" id="i43"></i>
+				<i class="glyphicon glyphicon-star" id="i44"></i>
+				<i class="glyphicon glyphicon-star" id="i45"></i>
+				<a href="Fiction1.html"><i class="glyphicon glyphicon-shopping-cart" id="borrow9">borrow..</i></a>
+				</button>			
+
+			</a>
+		</div>
+
+	</div>
+	<div id="general4">
+		<div id="row4">
+		<a href="Story.html">
+		
+		<img src="Story4.1.jpg" class="general4image" width="300px" height="200px" title="story">
+		<br><br>
+		<label for="hello">SHORT FICTION NO.3</label><br>
+				<i class="glyphicon glyphicon-star" id="i46"></i>
+				<i class="glyphicon glyphicon-star" id="i47"></i>
+				<i class="glyphicon glyphicon-star" id="i48"></i>
+				<i class="glyphicon glyphicon-star" id="i49"></i>
+				<i class="glyphicon glyphicon-star" id="i50"></i>
+				<a href="Story4.html"><i class="glyphicon glyphicon-shopping-cart" id="borrow10">borrow..</i></a>
+	
+		</a>
+		</div>
+
+
+		<div id="row5">
+		<a href="Funny.html">
+		
+		<img src="Funny5.1.jpg" class="general4image1" width="150px" height="200px" title="funny">
+		<br><br>
+		<label for="hello">SHORT FICTION NO.3</label><br>
+				<i class="glyphicon glyphicon-star" id="i46"></i>
+				<i class="glyphicon glyphicon-star" id="i47"></i>
+				<i class="glyphicon glyphicon-star" id="i48"></i>
+				<i class="glyphicon glyphicon-star" id="i49"></i>
+				<i class="glyphicon glyphicon-star" id="i50"></i>
+				<a href="Funnt5.html"><i class="glyphicon glyphicon-shopping-cart" id="borrow11">borrow..</i></a>
+		
+		</a>
+		</div>		
+	</div>
+
+
+	
+		
+
+	</div>
+</div>
+
+	<script type="text/javascript">
+		
+		function dell()
+		{
+				var darkColor=document.getElementById("google");
+				darkColor.classList.toggle("dark-mode");
+		}
+
+		function search(){
+			var searchBoxData=document.getElementById("searchbox").value;
+			
+			if(searchBoxData==="Computer" || searchBoxData==="computer" ||searchBoxData==="ကွန်ပျူတာ"|| searchBoxData==="ကွန်ပျူတာစာအုပ်များ" || searchBoxData==="ကွန်ပျူတာစာအုပ်")
+			{
+				window.open("Computer.html","newWindow");
+			}
+			else if(searchBoxData==="horror" || searchBoxData==="Horror" || searchBoxData==="သရဲစာအုပ်" || searchBoxData==="သရဲစာအုပ်များ" || searchBoxData==="သရဲ")
+			{
+				window.open("horror.html","newWindow");
+			}
+			else if(searchBoxData==="health" || searchBoxData==="healthy" || searchBoxData==="ကျန်းမာရေးစာအုပ်များ" || searchBoxData==="ကျန်းမာရေးစာအုပ်" || searchBoxData==="ကျန်းမာရေး")
+			{
+				window.open("Health.html","newWindow");
+			}
+			else if(searchBoxData=="Historical" || searchBoxData=="historical" || searchBoxData=="history" || searchBoxData=="History" || searchBoxData=="သမိုင်းစာပေများ" || searchBoxData=="သမိုင်းစာပေ" || searchBoxData=="သမိုင်းစာအုပ်များ" || searchBoxData=="သမိုင်းစာအုပ်")
+			{
+				window.open("Historical.html","newWindow");
+			}
+			else if(searchBoxData=="Fiction" || searchBoxData=="fiction" || searchBoxData=="သုတစာပေ" || searchBoxData=="သုတ" || searchBoxData=="ရသစာပေ" || searchBoxData=="ရသ")
+			{
+				window.open("Fiction.html","newWindow");
+			}
+			else if(searchBoxData=="Translate" || searchBoxData=="translate" || searchBoxData=="ဘာသာပြန်စာအုပ်များ" || searchBoxData=="ဘာသာပြန်စာပေ" || searchBoxData=="ဘာသာပြန်" || searchBoxData=="ဘာသာပြန်စာအုပ်")
+			{
+				window.open("Translate.html","newWindow");
+			}
+			else if(searchBoxData=="Stories" || searchBoxData=="stories" || searchBoxData=="story" || searchBoxData=="Story" || searchBoxData=="ပုံပြင်စာအုပ်များ" || searchBoxData=="ပုံပြင်စာအုပ်" || searchBoxData=="ပုံပြင်")
+			{
+				window.open("Story.html","newWindow");
+			}
+			else if(searchBoxData=="LoveStories" || searchBoxData=="lovestories" || searchBoxData=="Lovestories" || searchBoxData=="lovestories" || searchBoxData=="lovestory" || searchBoxData=="LoveStory" || searchBoxData=="loveStory" || searchBoxData=="အချစ်ပုံပြင်စာအုပ်များ" || searchBoxData=="အချစ်ပုံပြင်စာအုပ်" || searchBoxData=="အချစ်ပုံပြင်")
+			{
+				window.open("LoveStory.html","newWindow");
+			}
+			else if(searchBoxData=="Funny" || searchBoxData=="funny" || searchBoxData=="Joke" || searchBoxData=="joke" || searchBoxData=="Commedy" || searchBoxData=="commedy" || searchBoxData=="ဟာသစာအုပ်များ" || searchBoxData=="ဟာသစာပေများ" || searchBoxData=="ဟာသစာအုပ်" || searchBoxData=="ဟာသစာပေ" || searchBoxData=="ဟာသ")
+			{
+				window.open("Funny.html","newWindow");
+			}
+			
+			else{alert("This Book is not in OUR LIBRARY.We will try to add this book.");}
+		}
+
+		function computer(){
+			var a=document.getElementById("d");
+			a.action="home.html";
+		}
+		function horror(){
+			var a=document.getElementById("d");
+			a.action="login form.html";
+		}
+		function health(){
+			var a=document.getElementById("d");
+			a.action="Computer.html";
+		}
+		
+
+		
+
+			if(sessionStorage.getItem("n")!=null){
+
+
+		document.getElementById("show").innerHTML=sessionStorage.getItem("n")+" is comming soon...";
+	}
+	
+	</script>
+	</body>
+	</html>
